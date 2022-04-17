@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_app/Screens/home-screen.dart';
 import 'package:flutter_app/Screens/login-screen.dart';
 
 
@@ -15,6 +16,9 @@ class MyApp extends StatelessWidget{
           primarySwatch: Colors.blue
       ),
       home: LoginScreen(),
+      routes: {
+        "/home": (_) => new HomeScreen(),
+      },
     );
   }
 }

@@ -66,7 +66,10 @@ class _LoginScreenState extends State<LoginScreen>{
       color: Colors.blueAccent,
       child: MaterialButton(
         onPressed: (){
-          // do nothing
+          // need to add firebase processing here
+
+          // replace screen with home
+          Navigator.pushReplacementNamed(context, "/home");
         },
         padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
         minWidth: MediaQuery.of(context).size.width,

@@ -114,7 +114,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> with SingleTick
       onSaved: (value){
         confirmPasswordEditingController.text = value!;
       },
-      textInputAction: TextInputAction.next,
+      textInputAction: TextInputAction.done,
       decoration: InputDecoration(
         prefixIcon: Icon(
             Icons.vpn_key
@@ -150,6 +150,21 @@ class _RegistrationScreenState extends State<RegistrationScreen> with SingleTick
     );
     return Scaffold(
       backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        leading: IconButton(
+          onPressed: () {
+            // passing to root
+            Navigator.of(context).pop();
+          },
+          icon: Icon(
+            Icons.arrow_back,
+            color: Colors.redAccent,
+
+          ),
+        )
+      ),
       body: Center(
         child: SingleChildScrollView(
           child: Container(
