@@ -4,3 +4,13 @@ A Order management System that is aim to assist small/medium businesses by autom
  * Inventory
  * Cash flow/sales
  * Expenses
+
+Functions
+ * Login
+ * Signup
+ * New Order/Service
+ * List Order/Service
+ * Update Order/Service
+ * Delete Order/Service
+ * Profile
+ * Analytics
